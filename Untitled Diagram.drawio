@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-01-03T09:23:31.522Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="jLT83arUNZjzFyUhAkqK" version="16.1.2" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-01-03T09:31:16.711Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="ibPemeSapsQdK3XboLsg" version="16.1.2" type="github" pages="2">
   <diagram id="LNfVjrRe35UhfyM9A1Q7" name="OAuth &amp; OIDC">
     <mxGraphModel dx="997" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -219,6 +219,9 @@
         </mxCell>
         <mxCell id="aVPMgwYENC0QrRTnJKNQ-26" value="" style="shape=actor;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFF00;fontSize=14;fontColor=#0000FF;" vertex="1" parent="-2_6AlCLvjFXanOyNGJI-1">
           <mxGeometry x="470" y="40" width="40" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-27" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=#FFFF00;fontSize=14;fontColor=#0000FF;" vertex="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry x="590" y="610" width="40" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
