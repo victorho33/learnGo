@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-01-03T07:34:47.353Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="87PsptNzkoDzvWlLYgRP" version="16.1.2" type="github">
-  <diagram id="LNfVjrRe35UhfyM9A1Q7" name="Page-1">
-    <mxGraphModel dx="846" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2022-01-03T09:01:47.528Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="Y9FXPo1EHgzUlVOEdUS5" version="16.1.2" type="github" pages="2">
+  <diagram id="LNfVjrRe35UhfyM9A1Q7" name="OAuth &amp; OIDC">
+    <mxGraphModel dx="997" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -92,6 +92,119 @@
           <mxGeometry x="0.1691" y="2" relative="1" as="geometry">
             <mxPoint x="-16" y="-8" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-19" value="&lt;h1&gt;Vue SPA&lt;/h1&gt;&lt;p&gt;OAuth 2.0. and&amp;nbsp; OpenID Connect (OIDC)&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="280" y="360" width="360" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="MdSqvJfBIiTCW0qWxVqt" name="API Process Flow">
+    <mxGraphModel dx="997" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="-2_6AlCLvjFXanOyNGJI-0" />
+        <mxCell id="-2_6AlCLvjFXanOyNGJI-1" parent="-2_6AlCLvjFXanOyNGJI-0" />
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-1" value="&lt;h1&gt;&lt;span style=&quot;font-size: 14px ; font-weight: normal&quot;&gt;POST&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;font style=&quot;font-size: 20px&quot;&gt;/auth/login&lt;/font&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;Register the login time for customers.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- if it is a new customer, send a welcome email based on the email address&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry x="330" y="180" width="270" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-3" value="SPA" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry x="405" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-4" value="" style="endArrow=classic;html=1;rounded=0;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="-2_6AlCLvjFXanOyNGJI-1" source="aVPMgwYENC0QrRTnJKNQ-3" target="aVPMgwYENC0QrRTnJKNQ-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="169.5" as="sourcePoint" />
+            <mxPoint x="370" y="169.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-5" value="1. Call API after login&lt;br&gt;with JWT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="aVPMgwYENC0QrRTnJKNQ-4">
+          <mxGeometry x="-0.2632" y="4" relative="1" as="geometry">
+            <mxPoint x="81" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-6" value="&lt;h1&gt;&lt;font style=&quot;font-size: 14px ; font-weight: normal&quot;&gt;GET&lt;/font&gt;&amp;nbsp;&lt;span style=&quot;font-size: 20px&quot;&gt;/auth/customers&lt;/span&gt;&lt;span style=&quot;font-size: 20px ; font-weight: normal&quot;&gt;&amp;amp;email_address=xx@xx.com&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;Register the login time for customers.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&amp;nbsp;- if it is a new customer, send a welcome email based on the email address&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry x="10" y="360" width="500" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-7" value="" style="endArrow=classic;html=1;rounded=0;fontSize=20;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="261" as="sourcePoint" />
+            <mxPoint x="37" y="368" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="37" y="261" />
+              <mxPoint x="37" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-8" value="&lt;h1&gt;&lt;font style=&quot;font-size: 14px ; background-color: rgb(255 , 255 , 0)&quot; color=&quot;#0000ff&quot;&gt;POST&lt;/font&gt;&lt;span style=&quot;font-weight: normal ; font-size: 20px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 20px ; font-weight: normal&quot;&gt; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;/auth/customers&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;Create a new customer record&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry x="250" y="560" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-9" value="&lt;font style=&quot;font-size: 14px&quot;&gt;3. If it is a new customer, &lt;br&gt;create the customer record.&lt;/font&gt;" style="endArrow=classic;html=1;rounded=0;fontSize=20;entryX=0.476;entryY=-0.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry x="1" y="-46" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="497.88" y="290.99" as="sourcePoint" />
+            <mxPoint x="432.12" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="497.88" y="300.99" />
+              <mxPoint x="497.88" y="350.99" />
+              <mxPoint x="497.88" y="397.99" />
+              <mxPoint x="497.88" y="550.99" />
+            </Array>
+            <mxPoint x="-16" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-10" value="&lt;h1&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;GET&lt;/span&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 20px ; font-weight: normal&quot;&gt; &amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;/auth/customers&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;Create a new customer record&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry x="540" y="560" width="240" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-11" value="" style="endArrow=classic;html=1;rounded=0;fontSize=20;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="-2_6AlCLvjFXanOyNGJI-1" target="aVPMgwYENC0QrRTnJKNQ-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="292" as="sourcePoint" />
+            <mxPoint x="670" y="552" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-13" value="4. Retrieve the Customer ID&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="aVPMgwYENC0QrRTnJKNQ-11">
+          <mxGeometry x="0.3499" y="4" relative="1" as="geometry">
+            <mxPoint x="89" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-12" value="2. Check if email_address is registered" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry x="180" y="230" as="geometry">
+            <mxPoint x="-19" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-14" value="&lt;h1&gt;&lt;span style=&quot;font-size: 14px ; background-color: rgb(255 , 255 , 0)&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;POST&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 20px ; font-weight: normal&quot;&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;/auth/email&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;Send a welcome email to new customer&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=14;" vertex="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry x="820" y="210" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-15" value="" style="endArrow=classic;html=1;rounded=0;fontSize=20;" edge="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="259.5" as="sourcePoint" />
+            <mxPoint x="810" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="740" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-16" value="6. Invoke email API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="aVPMgwYENC0QrRTnJKNQ-15">
+          <mxGeometry x="0.3499" y="4" relative="1" as="geometry">
+            <mxPoint x="-1" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-17" value="" style="endArrow=classic;html=1;rounded=0;fontSize=20;" edge="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="300" as="sourcePoint" />
+            <mxPoint x="690" y="361" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="331" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-18" value="5. Store login time" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="aVPMgwYENC0QrRTnJKNQ-17">
+          <mxGeometry x="0.3499" y="4" relative="1" as="geometry">
+            <mxPoint x="27" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aVPMgwYENC0QrRTnJKNQ-19" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;labelBackgroundColor=#FFFF00;fontSize=14;fontColor=#0000FF;" vertex="1" parent="-2_6AlCLvjFXanOyNGJI-1">
+          <mxGeometry x="690" y="330" width="40" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
