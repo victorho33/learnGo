@@ -1,1 +1,99 @@
-<mxfile host="app.diagrams.net" modified="2022-01-03T06:56:05.893Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" version="16.1.2" etag="Iv98ChoDzD67JLZT03aR" type="github"><diagram id="LNfVjrRe35UhfyM9A1Q7">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-01-03T07:34:47.353Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="87PsptNzkoDzvWlLYgRP" version="16.1.2" type="github">
+  <diagram id="LNfVjrRe35UhfyM9A1Q7" name="Page-1">
+    <mxGraphModel dx="846" dy="589" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-6" value="&lt;font style=&quot;font-size: 14px&quot;&gt;5. Validate Token&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="a_2YmYYKKq0cO7CGeia4-5" target="a_2YmYYKKq0cO7CGeia4-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="210" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="520" y="205" />
+              <mxPoint x="496" y="205" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-1" value="Auth0&amp;nbsp;&lt;br&gt;(Authorization Server)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="90" width="175" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-2" value="Resource owner&lt;br&gt;(User)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="250" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-3" value="Client&lt;br&gt;(Mobile App / SPA - Browser)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="141" y="250" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-4" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="a_2YmYYKKq0cO7CGeia4-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="280" as="sourcePoint" />
+            <mxPoint x="140" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-5" value="API&lt;br&gt;Gateway" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-9" value="&lt;font style=&quot;font-size: 14px&quot;&gt;1. Authenticate User&lt;br&gt;and Request&amp;nbsp;&lt;br&gt;Token&lt;/font&gt;" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.344;exitY=-0.067;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a_2YmYYKKq0cO7CGeia4-3" target="a_2YmYYKKq0cO7CGeia4-1">
+          <mxGeometry x="-0.0437" y="29" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="220" as="sourcePoint" />
+            <mxPoint x="290" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="180" y="130" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-10" value="3. Issue Token" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=14;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="a_2YmYYKKq0cO7CGeia4-1" target="a_2YmYYKKq0cO7CGeia4-3">
+          <mxGeometry x="-0.4759" y="41" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="220" as="sourcePoint" />
+            <mxPoint x="270" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="290" y="160" />
+              <mxPoint x="260" y="200" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-11" value="Gmail&lt;br&gt;(Identity Store)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="590" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-12" value="&lt;font style=&quot;font-size: 14px&quot;&gt;2. Authenticate User&lt;br&gt;&lt;/font&gt;" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0.558;exitY=-0.017;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="a_2YmYYKKq0cO7CGeia4-1">
+          <mxGeometry x="-0.0076" y="13" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="455.03999999999996" y="175.98000000000002" as="sourcePoint" />
+            <mxPoint x="585" y="50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="463" y="40" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-13" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="520" y="110" width="40" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="a_2YmYYKKq0cO7CGeia4-3" target="a_2YmYYKKq0cO7CGeia4-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="279.5" as="sourcePoint" />
+            <mxPoint x="430" y="279.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-15" value="4. Call API with JWT" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="a_2YmYYKKq0cO7CGeia4-14">
+          <mxGeometry x="0.1691" y="2" relative="1" as="geometry">
+            <mxPoint x="-16" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-16" value="API&lt;br&gt;Provider" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="698" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="575" y="279.5" as="sourcePoint" />
+            <mxPoint x="695" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a_2YmYYKKq0cO7CGeia4-18" value="6. Invoke API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" vertex="1" connectable="0" parent="a_2YmYYKKq0cO7CGeia4-17">
+          <mxGeometry x="0.1691" y="2" relative="1" as="geometry">
+            <mxPoint x="-16" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
